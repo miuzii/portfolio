@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia Nurul Azizah | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-text">
+        <p class="hero-small">WELCOME TO MY</p>
+        <h1 class="hero-title gradient-text">PORTFOLIO WEBSITE</h1>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-header">
+        <h2 class="about-title gradient-about">About Me</h2>
+        <p class="subtitle">Transforming ideas into digital experiences</p>
+        </div>
+
+        <div class="about-contrainer">
+            <div class="about-text">
+                <h3>Hello, I'm<br>
+                    <span class="name">Mia Nurul Azizah</span></h3>
+                    <p>Saya seorang mahasiswi Semester 6 Teknik Informatika
+                        yang sangat tertarik pada desain dan pengembangan antarmuka digital.
+                        Saya berfokus pada menciptakan pengalaman pengguna yang menarik dan efektif untuk berbagai proyek.
+                    </p>
+
+            <div class="button-group">
+                <a href="CV Mia Nurul Azizah .pdf" download="" class="btn primary">Download CV</a>
+                <a href="#projects" class="btn outline">View Projects</a>
+            </div>
+            </div>
+
+            <div class="about-avatar">
+                    <img src="icon avatar.svg" alt="profile" class="avatar-icon">
+                    <img src="icon butterfly.svg" alt="icon" class="butterfly">
+                    <img src="Vector (Stroke).svg" alt="icon2" class="bear">
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="info-card">
+            <div class="glass-card-1">
+                <h4>Total Projects</h4>
+                <p>Crafting distinct visuals through design and precision.</p>
+            </div>
+            <div class="glass-card-2">
+                <h4>Certificates</h4>
+                <p>Basic editing skills.</p>
+            </div>
+            <div class="glass-card-3">
+                <h4>Skills</h4>
+                <p>Continuous learning journey</p>
+            </div>
+        </div>
+        </div>
+
+        </section>
+
+        <section class="portfolio" id="projects">
+            <h2 class="port-title gradient-text">Portfolio Showcase</h2>
+            <div class="portfolio-glass">
+                    <div class="portfolio-box">
+                            <p>PROJECT</p>
+                    </div>
+            </div>
+           
+            <div class="project-row">
+                <div class="project-wrapper">
+                <div class="project-card" onclick="toggleProject(1)">Project 1</div>
+        
+                </div>
+
+                <div class="project-wrapper">
+                <div class="project-card" onclick="toggleProject(2)">Project 2</div>
+                </div>
+
+                <div class="project-wrapper">
+                <div class="project-card" onclick="toggleProject(3)">Project 3</div>
+            </div>
+            </div>
+        </section>
+
+        <section class="certificates">
+            <div class="certificates-glass">
+                    <div class="certificates-box">
+                            <p>CERTIFICATES</p>
+                    </div>
+            </div>
+            <div class="certificates-row">
+                <div class="certificates-wrapper">
+                <div class="certificates-card">Certificate 1</div>
+        
+                </div>
+
+                <div class="certiificates-wrapper">
+                <div class="certificates-card">Certificate 2</div>
+                </div>
+
+                <div class="certificates-wrapper">
+                <div class="certificates-card" >Certificate</div>
+            </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="skill-glass">
+                    <div class="skill-box">
+                            <p>SKILLS</p>
+                    </div>
+                    <div class="skill-horizontal">
+                        <div class="skill-card">HTML</div>
+                        <div class="skill-card">CSS</div>
+                        <div class="skill-card">Java</div>
+                        <div class="skill-card">Figma</div>
+                        <div class="skill-card">Ms. Office</div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="contact-section">
+                <h2 class="contact-title">Contact Me</h2>
+                <p class="contact-subtitle">Got a question? Send me a message, and i'll get back to you soon.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-box">
+                    <h3>Get in Touch</h3>
+                    <p class="box-decs">Have something to discuss? Send me a message and let's talk.</p>
+
+                    <form  id="contactform">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" required></textarea>
+
+                    <input type="hidden" name="_subject" value="New Message from Portfolio">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button class="send-btn">Send</button>
+                    <p id="status"></p>
+                    </form>
+                </div>
+
+                <div class="contact-box social-box">
+                    <h3>Connect with Me</h3>
+                    <p class="box-decs">Let's stay connected through social media.</p>
+                <div class="social-list">
+                    
+                        <a href="https://linkedin.com/in/mia-nurul-azizah" target="_blank" class="social-item">
+                            <div  class="icon-glass">
+                            <img src="icon-linkedin.png" alt="Linkedin" class="social-icon">
+                            </div>
+                            <span>Linkedin</span>
+                        </a>
+        
+                         
+                        <a href="https://instagram.com/miuziie" target="_blank" class="social-item">
+                            <div  class="icon-glass">
+                            <img src="icon-instagram.svg" alt="Instagram" class="social-icon">
+                            </div>
+                             <span>Instagram</span>
+                        </a>
+                
+                    
+                        <a href="https://www.tiktok.com/@miuziiee" target="_blank" class="social-item">
+                            <div  class="icon-glass">
+                            <img src="tiktok-icon-free-png.png" alt="Tiktok" class="social-icon">
+                            </div>
+                            <span>Tiktok</span>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <div id="successpopup" class="popup-overlay">
+            <div class="popup-card">
+                <div class="send-animation">
+                    <div class="plane">✈️</div>
+                </div>
+                <h3>Message Sent-!!</h3>
+                <p>Thank You for reaching out<br>
+                    Your message has been successfully delivered.</p>
+                <button onclick="closepopup()">OK</button>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("lARwN5tGs5Q-cJHSP")
+        })();
+
+        document.getElementById("contactform").addEventListener("submit", function(e){
+            e.preventDefault();
+            emailjs.sendForm(
+                "SERVICE_ID",
+                "template_6e50p4q",
+                this
+            ).then(()=> {
+                document.getElementById("successpopup").classList.add("show");
+                this.reset();
+            })
+            .catch(error => {
+                console.error("EmailJS Error :", error);
+                alert("Failed to send message :(");
+            });
+            });
+            function closepopup(){
+                document.getElementById("successpopup").classList.remove("show");
+            }
+    </script>
+
+</body>
+</html>
+

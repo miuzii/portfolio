@@ -295,10 +295,11 @@ a{
 .project-row{
     justify-content: center;
     margin-top: 40px;
-    padding: 40px 40px;
+    padding: 40px;
     min-height: 480px;
     border-radius: 35px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-bottom: 60px;
     align-items: flex-start;
@@ -310,7 +311,9 @@ a{
     inset 0 0 0 1px rgba(255,255,255,0.35);
 }
 .project-card{
-    width: 350px;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
     height: 80px;
     border-radius: 40px;
     background: linear-gradient(180deg, #fde2f9 0%, #fbc4fc 100%,#ffc8f7 0%);
@@ -343,6 +346,11 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.portfolio,
+.certificates,
+.skills {
+    padding: 80px 8%;
 }
 @keyframes fadeDown{
     from{
@@ -391,13 +399,13 @@ a{
     margin-top: 40px;
     max-width: 1300px;
     margin: 40px 110px;
-    padding: 40px 30px;
+    padding: 40px ;
     min-height: 420px;
     border-radius: 35px;
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-bottom: 5px;
-    align-items: flex-start;
     color: white;
     background: linear-gradient(180deg, #fccaf8 0%, #FFDAFC 45%,#ffbdf9 100%);
     backdrop-filter: blur(20px);
@@ -406,7 +414,9 @@ a{
     inset 0 0 0 1px rgba(255,255,255,0.35);
 }
 .certificates-card{
-    width: 350px;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
     height: 380px;
     border-radius: 40px;
     background: linear-gradient(180deg, #f0d9f8 0%, #eac3f8 80%,#f3d9fe 100%);
@@ -771,3 +781,17 @@ a{
     opacity: 0;
     pointer-events: none;
 }
+@media (max-width: 1024px){
+    .project-row,
+    .certificates-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .project-row,
+    .certificates-row{
+        grid-template-columns: 1fr;
+    }
+}
+

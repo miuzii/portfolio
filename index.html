@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440, initial-scale=1.0">
+
+    <title>Mia Nurul Azizah | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero">
+        <div class="hero-text">
+            <p class="hero-small">WELCOME TO MY</p>
+            <h1 class="hero-title gradient-text">PORTFOLIO WEBSITE</h1>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section class="about" id="about">
+
+        <div class="about-header">
+            <h2 class="about-title gradient-about">About Me</h2>
+            <p class="subtitle">Transforming ideas into digital experiences</p>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-text">
+                <h3>
+                    Hello, I'm<br>
+                    <span class="name">Mia Nurul Azizah</span>
+                </h3>
+
+                <p>
+                    Saya seorang mahasiswi Semester 6 Teknik Informatika
+                    yang sangat tertarik pada desain dan pengembangan
+                    antarmuka digital. Saya berfokus pada menciptakan
+                    pengalaman pengguna yang menarik dan efektif untuk
+                    berbagai proyek.
+                </p>
+
+                <div class="button-group">
+                    <a href="CV Mia Nurul Azizah (1).pdf" download class="btn primary">Download CV</a>
+                    <a href="#projects" class="btn outline">View Projects</a>
+                </div>
+            </div>
+
+            <div class="about-avatar">
+                <img src="icon avatar.svg" alt="profile" class="avatar-icon">
+                <img src="icon butterfly.svg" alt="butterfly icon" class="butterfly">
+                <img src="Vector (Stroke).svg" alt="bear icon" class="bear">
+            </div>
+
+        </div>
+
+
+        <!-- INFO CARDS (bisa diklik, scroll ke section tujuan) -->
+        <div class="info-cards">
+            <div class="info-card">
+
+                <a href="#projects" class="glass-card-1">
+                    <h4>Total Projects</h4>
+                    <p>Crafting distinct visuals through design and precision.</p>
+                </a>
+
+                <a href="#certificates" class="glass-card-2">
+                    <h4>Certificates</h4>
+                    <p>Basic editing skills.</p>
+                </a>
+
+                <a href="#skills" class="glass-card-3">
+                    <h4>Skills</h4>
+                    <p>Continuous learning journey</p>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PORTFOLIO
+    ========================== -->
+    <section class="portfolio" id="projects">
+
+        <h2 class="port-title gradient-text">Portfolio Showcase</h2>
+
+        <div class="portfolio-glass">
+            <div class="portfolio-box">
+                <p>PROJECT</p>
+            </div>
+        </div>
+
+        <div class="project-row">
+
+            <!-- PROJECT 1 -->
+            <div class="project-wrapper">
+                <div class="project-card">
+                    <div class="project-title">Project 1</div>
+                    <div class="project-image">
+                        <img src="project/project 1.png"
+                             alt="Project 1"
+                             onclick="openImage('project/project 1.png')">
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-wrapper">
+                <div class="project-card">
+                    <div class="project-title">Project 2</div>
+                    <div class="project-image">
+                        <img src="project/project 2.png"
+                             alt="Project 2"
+                             onclick="openImage('project/project 2.png')">
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-wrapper">
+                <div class="project-card">
+                    <div class="project-title">Project 3</div>
+                    <div class="project-image">
+                        <img src="project/project 3.png"
+                             alt="Project 3"
+                             onclick="openImage('project/project 3.png')">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CERTIFICATES
+    ========================== -->
+    <section class="certificates" id="certificates">
+
+    <div class="certificates-glass">
+        <div class="certificates-box">
+            <p>CERTIFICATES</p>
+        </div>
+    </div>
+
+    <div class="certificates-row">
+
+        <!-- CERTIFICATE 1 -->
+        <div class="certificates-wrapper">
+            <div class="certificates-card">
+                <img src="certificate/Sertifikat Google.png"
+                     alt="Certificate 1"
+                     class="cert-img"
+                     onclick="openImage(this.src)">
+                <p class="cert-label">Technical Support Fundamentals</p>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE 2 -->
+        <div class="certificates-wrapper">
+            <div class="certificates-card">
+                <img src="certificate/Sertifikat Stanford (1).png"
+                     alt="Certificate 2"
+                     class="cert-img"
+                     onclick="openImage(this.src)">
+                <p class="cert-label">AI Series : Introduction to Healthcare</p>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE 3 -->
+        <div class="certificates-wrapper">
+            <div class="certificates-card">
+                <img src="certificate/Sertifikat JOHNS HOPKINS UNIVERSITY.png"
+                     alt="Certificate 3"
+                     class="cert-img"
+                     onclick="openImage(this.src)">
+                <p class="cert-label">HTML, CSS, and JavaScript for Web Developers</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+    <section class="skills" id="skills">
+
+        <div class="skill-glass">
+
+            <div class="skill-box">
+                <p>SKILLS</p>
+            </div>
+
+            <div class="skill-horizontal">
+                <div class="skill-card">HTML &amp; CSS</div>
+                <div class="skill-card">PHP &amp; MySQL</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">Figma</div>
+                <div class="skill-card">CapCut</div>
+                <div class="skill-card">Ms. Office</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section class="contact-section" id="contact">
+
+        <h2 class="contact-title">Contact Me</h2>
+
+        <p class="contact-subtitle">
+            Got a question? Send me a message, and I'll get back to you soon.
+        </p>
+
+        <div class="contact-wrapper">
+
+            <!-- CONTACT FORM -->
+            <div class="contact-box">
+
+                <h3>Get in Touch</h3>
+
+                <p class="box-decs">
+                    Have something to discuss? Send me a message and let's talk.
+                </p>
+
+                <form id="contactform">
+
+                    <input type="text" name="Name" placeholder="Your Name" required>
+
+                    <input type="text" name="subject" placeholder="Subject" required>
+
+                    <textarea name="Message" placeholder="Your Message" required></textarea>
+
+                    <input type="hidden" name="_subject" value="New Message from Portfolio">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <button class="send-btn" type="submit">Send</button>
+
+                    <p id="status"></p>
+
+                </form>
+
+            </div>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="contact-box social-box">
+
+                <h3>Connect with Me</h3>
+
+                <p class="box-decs">
+                    Let's stay connected through social media.
+                </p>
+
+                <div class="social-list">
+
+                    <a href="https://linkedin.com/in/mia-nurul-azizah" target="_blank" rel="noopener" class="social-item">
+                        <div class="icon-glass">
+                            <img src="icon-linkedin.png" alt="Linkedin" class="social-icon">
+                        </div>
+                        <span>Linkedin</span>
+                    </a>
+
+                    <a href="https://instagram.com/miuziie" target="_blank" rel="noopener" class="social-item">
+                        <div class="icon-glass">
+                            <img src="icon-instagram.svg" alt="Instagram" class="social-icon">
+                        </div>
+                        <span>Instagram</span>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@miuziiee" target="_blank" rel="noopener" class="social-item">
+                        <div class="icon-glass">
+                            <img src="tiktok-icon-free-png.png" alt="Tiktok" class="social-icon">
+                        </div>
+                        <span>Tiktok</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SUCCESS POPUP
+    ========================== -->
+    <div id="successpopup" class="popup-overlay">
+        <div class="popup-card">
+
+            <div class="send-animation">
+                <div class="plane">✈️</div>
+            </div>
+
+            <h3>Message Sent!!</h3>
+
+            <p>
+                Thank you for reaching out.<br>
+                Your message has been successfully delivered.
+            </p>
+
+            <button onclick="closepopup()">OK</button>
+
+        </div>
+    </div>
+
+
+    <!-- =========================
+         IMAGE VIEWER
+         (harus berada SEBELUM <script> supaya elemennya sudah ada)
+    ========================== -->
+    <div id="imageViewer" class="image-viewer">
+        <button class="close-image" onclick="closeImage()">×</button>
+        <img id="largeImage" src="" alt="Project Preview">
+    </div>
+
+
+    <!-- =========================
+         SCRIPTS
+    ========================== -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+    /* ---------- EMAILJS ---------- */
+
+    emailjs.init({ publicKey: "lARwN5tGs5Q-cJHSP" });
+
+    const contactForm = document.getElementById("contactform");
+    const sendBtn = contactForm.querySelector(".send-btn");
+
+    contactForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        sendBtn.disabled = true;
+        sendBtn.textContent = "Sending...";
+
+        // GANTI "service_xxxxxxx" dengan Service ID dari dashboard EmailJS
+        emailjs.sendForm("service_uns4keg", "template_5f4mz9f", this)
+
+            .then(() => {
+                document.getElementById("successpopup").classList.add("show");
+                this.reset();
+            })
+
+            .catch(error => {
+                console.error("EmailJS Error :", error);
+                alert("Failed to send message: " + (error.text || "please try again"));
+            })
+
+            .finally(() => {
+                sendBtn.disabled = false;
+                sendBtn.textContent = "Send";
+            });
+
+    });
+
+
+
+        /* ---------- POPUP SUKSES ---------- */
+
+        function closepopup() {
+            document.getElementById("successpopup").classList.remove("show");
+        }
+
+
+        /* ---------- IMAGE VIEWER ---------- */
+
+        const viewer = document.getElementById("imageViewer");
+        const largeImage = document.getElementById("largeImage");
+
+        function openImage(imageSrc) {
+            largeImage.src = imageSrc;
+            viewer.classList.add("show");
+        }
+
+        function closeImage() {
+            viewer.classList.remove("show");
+        }
+
+        // klik area gelap di luar gambar = tutup
+        viewer.addEventListener("click", function (e) {
+            if (e.target === this) closeImage();
+        });
+
+        // tombol Esc = tutup
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") closeImage();
+        });
+
+    </script>
+
+</body>
+</html>

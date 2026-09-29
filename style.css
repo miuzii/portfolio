@@ -87,11 +87,7 @@ a{
 
     border-radius: 50%;
 
-    background: radial-gradient(
-        circle,
-        rgba(255,255,255,0.45) 0%,
-        rgba(255,255,255,0) 70%
-    );
+    background: radial-gradient(circle at top left, rgba(168, 85, 247, 0.45), transparent 45%);
 
     top: -190px;
     left: -120px;
@@ -325,8 +321,8 @@ a{
 }
 
 .avatar-icon{
-    width: 225px;
-    height: auto;
+    width: 280px;
+    height: 280px;
 
     border-radius: 50%;
 
@@ -334,7 +330,7 @@ a{
     align-items: center;
     justify-content: center;
 
-    transform: translate(-100px,-20px);
+    transform: translate(-40px,-20px);
 
     background: rgba(215,171,255,0.45);
 
@@ -349,21 +345,24 @@ a{
 }
 
 .butterfly{
-    width: 80px;
-    height: auto;
+    position: absolute;
+    top: -15px;
+    left: -25px;
 
-    transform: translate(-105px,-255px);
+    width: 90px;
+    height: auto;
 }
 
 .bear{
-    width: 65px;
+    position: absolute;
+    top: 195px;
+    left: 175px;
+
+    width: 75px;
     height: auto;
 
-    transform:
-        translate(-20px,-90px)
-        rotate(20deg);
+    transform: rotate(20deg);
 }
-
 
 /* =========================
    INFO CARDS

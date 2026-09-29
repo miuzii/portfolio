@@ -2,6 +2,11 @@
    RESET & BASE
 ========================= */
 
+
+html {
+    zoom: 0.9;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -161,6 +166,8 @@ a{
 .about-header{
     text-align: center;
     margin-bottom: 80px;
+
+    padding-top: 60px;
 }
 
 .gradient-about{
@@ -378,6 +385,7 @@ a{
     padding-right: 55px;
 }
 
+/* DIUBAH: align-items center -> stretch */
 .info-card{
     min-width: 150px;
 
@@ -386,7 +394,7 @@ a{
     border-radius: 50px;
 
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 16px;
 
     backdrop-filter: blur(20px);
@@ -397,11 +405,13 @@ a{
         inset 0 0 0 1px rgba(255,255,255,0.4);
 }
 
-/* kartu (berupa link <a> yang bisa diklik) */
+/* DIUBAH: display block -> flex column + justify-content center */
 .glass-card-1,
 .glass-card-2,
 .glass-card-3{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
 
     padding: 25px;
